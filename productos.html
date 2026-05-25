@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos — Punto Gráfico</title>
+    <meta name="description" content="Catálogo de productos de imprenta de Punto Gráfico: tarjetas, folletos, carteles, lonas, sobres, bolsas, merchandising y más.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/productos.css">
+</head>
+<body>
+    <!-- ───── Navbar ───── -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo"><img class="logo-img" src="img/punto_grafico_white.png"></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav id="nav-menu" class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="contacto.html#contacto-form" class="btn btn-primary">Presupuesto</a>
+        </div>
+    </header>
+
+    <!-- ───── Hero ───── -->
+    <section class="hero productos-hero">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <span class="sep">/</span>
+                <span>Productos</span>
+            </nav>
+            <span class="eyebrow">Catálogo completo</span>
+            <h1>Más de 60 productos, <span class="accent">precio claro</span> y plazos cumplidos.</h1>
+            <p class="lead">Filtra por categoría, mira ejemplos y solicita presupuesto del que necesites en segundos.</p>
+            
+            <!-- ───── Categories Grid ───── -->
+            <div class="categories-grid">
+                <a href="#tarjetas" class="category-card">
+                    <div class="category-icon"><i class="fas fa-id-card"></i></div>
+                    <strong>Tarjetería</strong>
+                    <span>7 productos</span>
+                </a>
+                <a href="#offset" class="category-card">
+                    <div class="category-icon"><i class="fas fa-newspaper"></i></div>
+                    <strong>Offset</strong>
+                    <span>12 productos</span>
+                </a>
+                <a href="#gran-formato" class="category-card">
+                    <div class="category-icon"><i class="fas fa-flag"></i></div>
+                    <strong>Gran formato</strong>
+                    <span>9 productos</span>
+                </a>
+                <a href="#carteleria" class="category-card">
+                    <div class="category-icon"><i class="fas fa-image"></i></div>
+                    <strong>Cartelería</strong>
+                    <span>8 productos</span>
+                </a>
+                <a href="#sobres" class="category-card">
+                    <div class="category-icon"><i class="fas fa-envelope"></i></div>
+                    <strong>Sobres y bolsas</strong>
+                    <span>11 productos</span>
+                </a>
+                <a href="#regalo" class="category-card">
+                    <div class="category-icon"><i class="fas fa-mug-hot"></i></div>
+                    <strong>Promocional</strong>
+                    <span>14 productos</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── Filter Bar ───── -->
+    <div class="filter-bar">
+        <div class="container">
+            <div class="filter-chips">
+                <a href="#todos" class="chip active"><i class="fas fa-th"></i> Todos</a>
+                <a href="#tarjetas" class="chip">Tarjetería</a>
+                <a href="#offset" class="chip">Offset</a>
+                <a href="#gran-formato" class="chip">Gran formato</a>
+                <a href="#carteleria" class="chip">Cartelería</a>
+                <a href="#sobres" class="chip">Sobres</a>
+                <a href="#regalo" class="chip">Promocional</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- ───── Tarjetería ───── -->
+        <section id="tarjetas" class="productos-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Tarjetería</span>
+                    <h2>Tarjetas y papelería corporativa</h2>
+                    <p>Lo primero que entrega tu marca. Cuidamos cada detalle: papel, tintas y acabados.</p>
+                </div>
+                <div class="productos-grid">
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <span class="tag tag-pink">Top venta</span>
+                            <img src="img/tarjeta-steve.jpg" alt="Tarjeta de visita">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Tarjetas de visita</h3>
+                            <p>350g, doble cara, plastificado mate, brillo o soft-touch.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>0,08€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/carta-template.webp" alt="Hojas de carta">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Hojas de carta A4</h3>
+                            <p>Papel offset 90/100g. Color o blanco y negro.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>0,12€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/carpeta-hitech.webp" alt="Carpetas">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Carpetas portadocumentos</h3>
+                            <p>Cartulina 350g con solapa interior y troquelado.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>1,40€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <span class="tag tag-blue">Novedad</span>
+                            <img src="img/notas-vendetta.png" alt="Notas adhesivas">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Bloc de notas adhesivas</h3>
+                            <p>Tacos de 50 hojas con adhesivo, tu logo en cada hoja.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>0,90€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───── Offset ───── -->
+        <section id="offset" class="productos-section productos-section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Offset</span>
+                    <h2>Catálogos, libros y folletos</h2>
+                    <p>Tiradas medias y grandes con estabilidad de color. Acabados profesionales.</p>
+                </div>
+                <div class="productos-grid">
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <span class="tag tag-pink">Top venta</span>
+                            <img src="img/grapado-concalma.jpeg" alt="Catálogos">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Catálogos grapados</h3>
+                            <p>A4 / A5 desde 16 a 64 pág. Papel couché 135–170g.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>1,80€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/memoria-eroski.jpg" alt="Revistas">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Revistas y memorias</h3>
+                            <p>Encuadernación grapada o rústica. Hasta 200 pág.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>2,40€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/tapablanda-hogar.jpg" alt="Libros">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Libros tapa blanda</h3>
+                            <p>Cosido y encolado, papel ahuesado, lomo personalizado.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>3,20€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/folleto-heladeria.jpg" alt="Folletos">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Folletos y dípticos</h3>
+                            <p>A4/A5 plegado en 2 o 3 cuerpos. Papel 135g.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>0,18€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───── Gran Formato ───── -->
+        <section id="gran-formato" class="productos-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Gran formato</span>
+                    <h2>Lonas, vinilos y banderolas</h2>
+                    <p>Para escaparates, fachadas, ferias y eventos. Resistencia exterior garantizada.</p>
+                </div>
+                <div class="productos-grid">
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <span class="tag tag-pink">Top venta</span>
+                            <img src="img/lona-cdmfp.png" alt="Lonas">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Lonas para carreteras</h3>
+                            <p>PVC 440g con ojales. Hasta 50m de ancho continuo.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>9€/m²</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/vinilo-todocoches.png" alt="Vinilos">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Vinilos cortados o impresos</h3>
+                            <p>Para escaparate, suelo o vehículo. Aplicación incluida.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>14€/m²</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/rollup-festival.jpg" alt="Roll-up">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Roll-up 85×200 cm</h3>
+                            <p>Estructura aluminio, bolsa de transporte incluida.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>52€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/banderolas-cine.png" alt="Banderolas">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Banderolas de farola</h3>
+                            <p>Tejido textil 110g, doble cara, kit de sujeción.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>22€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───── Cartelería ───── -->
+        <section id="carteleria" class="productos-section productos-section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Cartelería</span>
+                    <h2>Carteles para tienda y eventos</h2>
+                    <p>Desde 1 unidad. Acabados mate, brillo o reciclado.</p>
+                </div>
+                <div class="productos-grid">
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/a3-fest.jpg" alt="Carteles">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Carteles A3 / A2 / A1</h3>
+                            <p>Papel couché 170g o offset reciclado. Color full.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>3,20€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/display-sculpture.webp" alt="Displays">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Displays mostrador</h3>
+                            <p>Cartón 600g troquelado y plegable. Listo para ensamblar.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>6,50€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <span class="tag tag-green">Eco</span>
+                            <img src="img/reciclado-beaute.jpg" alt="Cartel reciclado">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Carteles papel reciclado</h3>
+                            <p>Papel kraft 150g, look natural. Ideal para hostelería.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>2,90€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/stoppers-mikado.jpeg" alt="PLV">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Stoppers y PLV</h3>
+                            <p>Foam 5mm cortado en forma. Base imantada o adhesiva.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>8,90€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───── Sobres y bolsas ───── -->
+        <section id="sobres" class="productos-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Sobres y bolsas</span>
+                    <h2>Sobres y bolsas con tu identidad</h2>
+                    <p>Materiales reciclables y opciones FSC certificadas.</p>
+                </div>
+                <div class="productos-grid">
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/sobre-americano.jpg" alt="Sobres">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Sobres americanos</h3>
+                            <p>110×220 mm con / sin ventana. Papel 90g.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>0,12€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/bolsa-simplex.jpg" alt="Bolsas">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Sobres A4 bolsa</h3>
+                            <p>229×324 mm con fuelle. Adhesivo o autocierre.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>0,28€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <span class="tag tag-green">Eco</span>
+                            <img src="img/bolsa-wildflower.avif" alt="Bolsa kraft">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Bolsas kraft con asa</h3>
+                            <p>Papel 100g FSC. Variedad de tamaños y colores.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>0,42€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/bolsa-algodon.jpg" alt="Bolsa tela">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Bolsas algodón / yute</h3>
+                            <p>Tote bag 100% algodón. Serigrafía 1, 2 o 4 colores.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>1,80€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───── Promocional ───── -->
+        <section id="regalo" class="productos-section productos-section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Promocional</span>
+                    <h2>Merchandising con personalidad</h2>
+                    <p>Bolígrafos, libretas, textil, tazas, mochilas, tecnología.</p>
+                </div>
+                <div class="productos-grid">
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <span class="tag tag-pink">Top venta</span>
+                            <img src="img/boli-comunion.jpeg" alt="Bolígrafos">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Bolígrafos personalizados</h3>
+                            <p>Más de 40 modelos. Marcado láser o tampografía.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>0,32€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/libreta-marina.jpg" alt="Libretas">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Libretas A5 con logo</h3>
+                            <p>Tapa dura o blanda. Hojas lisa, rayada o cuadrícula.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>2,80€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/taza-ceramica.jpg" alt="Tazas">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Tazas cerámica</h3>
+                            <p>Sublimación full color. Modelos clásico, jumbo o cónico.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>2,40€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <span class="tag tag-blue">Novedad</span>
+                            <img src="img/camiseta-elromantico.jpg" alt="Camisetas">
+                        </div>
+                        <div class="producto-body">
+                            <h3>Camisetas serigrafiadas</h3>
+                            <p>100% algodón orgánico. Serigrafía 1–4 tintas o DTG.</p>
+                            <div class="producto-meta">
+                                <div class="producto-precio"><span>desde</span><strong>5,90€/ud</strong></div>
+                                <a href="contacto.html#contacto-form" class="enlace-pedir">Solicitar <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───── CTA ───── -->
+        <section class="cta-productos">
+            <div class="container">
+                <h2>¿No encuentras lo que buscas?</h2>
+                <p>Tenemos más de 5.000 referencias. Cuéntanos qué necesitas y te lo encontramos.</p>
+                <div class="cta-buttons">
+                    <a href="contacto.html#contacto-form" class="btn btn-primary">Solicitar presupuesto</a>
+                    <a href="https://wa.me/34914567890" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ───── Footer ───── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img class="footer-logo" src="img/punto_grafico_white.png" alt="Punto Gráfico">
+                    <p>Imprenta y producción gráfica integral en Madrid. Más de 14 años imprimiendo la marca de empresas y autónomos.</p>
+                    <div class="socials">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>SERVICIOS</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicios.html">Impresión offset</a></li>
+                        <li><a href="servicios.html">Gran formato</a></li>
+                        <li><a href="servicios.html">Cartelería</a></li>
+                        <li><a href="servicios.html">Sobres y bolsas</a></li>
+                        <li><a href="servicios.html">Regalo promocional</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>EMPRESA</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Catálogo</a></li>
+                        <li><a href="index.html#trabajos">Trabajos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>LEGAL</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>CONTACTO</h4>
+                    <ul class="footer-contact">
+                        <li><a href="mailto:hola@puntografico.es"><i class="fas fa-envelope"></i> hola@puntografico.es</a></li>
+                        <li><a href="tel:+34910000000"><i class="fas fa-phone"></i> +34 91 000 00 00</a></li>
+                        <li><span><i class="fas fa-map-marker-alt"></i> C/ Imprenta 12 28906<br>Getafe, Madrid</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Punto Gráfico. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

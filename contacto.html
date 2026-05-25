@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto — Punto Gráfico</title>
+    <meta name="description" content="Contacta con Punto Gráfico para solicitar presupuestos o resolver tus dudas sobre nuestros servicios de imprenta y producción gráfica.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <!-- ───── Navbar ───── -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo"><img class="logo-img" src="img/punto_grafico_white.png"></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav id="nav-menu" class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#contacto-form" class="btn btn-primary">Presupuesto</a>
+        </div>
+    </header>
+
+    <!-- ───── Hero ───── -->
+    <section class="hero">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <span class="sep">/</span>
+                <span>Contacto</span>
+            </nav>
+            <span class="eyebrow">Contacto</span>
+            <h1>Cuéntanos tu proyecto, <span class="accent">nosotros lo hacemos realidad</span>.</h1>
+            <p class="lead">Asesoramiento personalizado, presupuestos sin compromiso y atención directa. Responde a tu proyecto con soluciones gráficas integradas.</p>
+        </div>
+    </section>
+
+    <!-- ───── Quick Contact ───── -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-contact-grid">
+                <div class="quick-card quick-card-phone">
+                    <div class="quick-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Llamada directa</h3>
+                    <p>Lunes a viernes,<br>9:00–18:00</p>
+                    <a href="tel:+34914567890" class="btn btn-secondary btn-sm">+34 91 456 7890</a>
+                </div>
+                <div class="quick-card quick-card-email">
+                    <div class="quick-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Respuesta en<br>máximo 24h</p>
+                    <a href="mailto:contacto@puntografico.es" class="btn btn-secondary btn-sm">contacto@puntografico.es</a>
+                </div>
+                <div class="quick-card quick-card-whatsapp">
+                    <div class="quick-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Respuesta inmediata<br>de 9:00–19:00</p>
+                    <a href="https://wa.me/34914567890" target="_blank" class="btn btn-whatsapp btn-sm">Escribe aquí</a>
+                </div>
+                <div class="quick-card quick-card-form">
+                    <div class="quick-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Formulario</h3>
+                    <p>Solicita presupuesto<br>o consulta</p>
+                    <a href="#contacto-form" class="btn btn-secondary btn-sm">Enviar solicitud</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── Contact Form Section ───── -->
+    <section class="contacto-section">
+        <div class="container">
+            <div class="contacto-wrapper">
+                <!-- Form -->
+                <div class="contacto-form-wrapper">
+                    <h2 id="contacto-form">Solicitar presupuesto</h2>
+                    <p class="intro">Cuéntanos tu proyecto con el máximo detalle. Te responderemos con un presupuesto personalizado en 24 horas.</p>
+                    
+                    <form class="form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                            <span class="error-message" id="error-nombre"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Nombre de la empresa (opcional)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            <span class="error-message" id="error-email"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+34 91 456 7890" required>
+                            <span class="error-message" id="error-telefono"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servicio">Servicio de interés *</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="offset">Impresión offset</option>
+                                <option value="gran-formato">Gran formato</option>
+                                <option value="carteleria">Cartelería</option>
+                                <option value="sobres">Sobres</option>
+                                <option value="regalo">Regalo promocional</option>
+                                <option value="integral">Producción integral</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <span class="error-message" id="error-servicio"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Describe tu proyecto *</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos los detalles: qué necesitas, cantidad, plazo, presupuesto aproximado..." rows="5" required></textarea>
+                            <span class="error-message" id="error-mensaje"></span>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
+                            <label for="privacidad">Acepto la <a href="#" target="_blank">política de privacidad</a> *</label>
+                            <span class="error-message" id="error-privacidad"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar solicitud</button>
+                        <div class="form-success" id="form-success">
+                            <i class="fas fa-check-circle"></i>
+                            <span>¡Solicitud enviada! Te contactaremos en 24 horas.</span>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="contacto-sidebar">
+                    <!-- WhatsApp Card -->
+                    <div class="sidebar-card sidebar-whatsapp">
+                        <h3>¿Prisa?</h3>
+                        <p>WhatsApp es la forma más rápida de comunicarte con nosotros.</p>
+                        <a href="https://wa.me/34914567890" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Info Card -->
+                    <div class="sidebar-card sidebar-info">
+                        <h3>Información</h3>
+                        <ul class="info-list">
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span class="label">Teléfono</span>
+                                    <a href="tel:+34914567890">+34 91 456 7890</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span class="label">Email</span>
+                                    <a href="mailto:contacto@puntografico.es">contacto@puntografico.es</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="label">Dirección</span>
+                                    <p>C/ Imprenta 12<br>28906 Getafe, Madrid</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <span class="label">Horario</span>
+                                    <p>Lun–Vie: 9:00–18:00<br>Sab–Dom: Cerrado</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- CTA Card -->
+                    <div class="sidebar-card sidebar-cta">
+                        <h3>Portafolio</h3>
+                        <p>Descubre los proyectos que hemos realizado para nuestros clientes.</p>
+                        <a href="index.html#trabajos" class="btn btn-primary">Ver trabajos</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── Map Section ───── -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-wrapper">
+                <div class="map-content">
+                    <h2>Nos encuentras aquí</h2>
+                    <p>Oficinas en Getafe, a apenas 30 minutos del centro de Madrid. Pide cita y visitanos.</p>
+                    <div class="map-address">
+                        <i class="fas fa-map-pin"></i>
+                        <div>
+                            <strong>Punto Gráfico</strong>
+                            <p>Calle Madrid 123<br>28940 Getafe, Madrid<br>España</p>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-directions"></i> Cómo llegar
+                    </a>
+                </div>
+                <div class="map-embed">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.6677419123!2d-3.7279!3d40.3167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE5JzAwLjEiTiAzwrc0Myc0NC4wIlc!5e0!3m2!1ses!2ses!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── Hours & Departments ───── -->
+    <section class="hours-section">
+        <div class="container">
+            <h2>Horarios y departamentos</h2>
+            <div class="hours-grid">
+                <div class="hours-card">
+                    <h3>Horario general</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span>Lunes a viernes</span>
+                            <strong>9:00 — 18:00</strong>
+                        </li>
+                        <li>
+                            <span>Sábados</span>
+                            <strong>10:00 — 14:00</strong>
+                        </li>
+                        <li>
+                            <span>Domingos</span>
+                            <strong>Cerrado</strong>
+                        </li>
+                        <li class="highlight">
+                            <span>Vacaciones</span>
+                            <strong>1–15 Agosto</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hours-card">
+                    <h3>Departamentos</h3>
+                    <div class="departments-list">
+                        <div class="dept">
+                            <strong>Producción</strong>
+                            <a href="tel:+34914567891">+34 91 456 7891</a>
+                        </div>
+                        <div class="dept">
+                            <strong>Diseño</strong>
+                            <a href="mailto:diseno@puntografico.es">diseno@puntografico.es</a>
+                        </div>
+                        <div class="dept">
+                            <strong>Facturación</strong>
+                            <a href="mailto:facturas@puntografico.es">facturas@puntografico.es</a>
+                        </div>
+                        <div class="dept">
+                            <strong>Comercial</strong>
+                            <a href="tel:+34914567890">+34 91 456 7890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── FAQ ───── -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Cuál es el plazo de entrega?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <p>Los plazos varían según el servicio. Offset: 5–7 días. Gran formato: 3–5 días. Cartelería: 2–3 días. Consulta tu proyecto específico en el formulario de contacto.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Hacen envíos a toda España?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <p>Sí, realizamos envíos a toda España mediante transportistas profesionales. El coste se ajusta según destino y peso. Incluye seguro de envío y seguimiento.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Cómo es el proceso de presupuesto?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <p>1. Rellena el formulario con detalles de tu proyecto. 2. Te contactamos en 24h con opciones y presupuesto. 3. Confirmas y comienza la producción. No hay costes ocultos.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Aceptan diseños propios?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <p>Claro, aceptamos archivos en PDF, AI, PSD, INDD. Si necesitas ayuda con el diseño, nuestro equipo ofrece servicios de diseño personalizado.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Cuál es la tirada mínima?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <p>Offset: 500 unidades. Gran formato: Sin mínimo. Cartelería: Sin mínimo. Sobres: 250 unidades. Consulta opciones para tiradas menores.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Realizan maquetas o pruebas?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <p>Sí, ofrecemos pruebas certificadas (Fogra) para proyectos offset. Así garantizamos que el resultado final coincida exactamente con lo que esperas.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── CTA ───── -->
+    <section class="cta-contacto">
+        <div class="container">
+            <h2>¿Listo para tu proyecto?</h2>
+            <p>Somos tu socio en soluciones gráficas. Respondemos en 24 horas.</p>
+            <div class="cta-buttons">
+                <a href="#contacto-form" class="btn btn-primary btn-lg">Solicitar presupuesto</a>
+                <a href="servicios.html" class="btn btn-secondary btn-lg">Ver servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── Footer ───── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img class="footer-logo" src="img/punto_grafico_white.png" alt="Punto Gráfico">
+                    <p>Imprenta y producción gráfica integral en Madrid. Más de 14 años imprimiendo la marca de empresas y autónomos.</p>
+                    <div class="socials">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>SERVICIOS</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicios.html">Impresión offset</a></li>
+                        <li><a href="servicios.html">Gran formato</a></li>
+                        <li><a href="servicios.html">Cartelería</a></li>
+                        <li><a href="servicios.html">Sobres y bolsas</a></li>
+                        <li><a href="servicios.html">Regalo promocional</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>EMPRESA</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Catálogo</a></li>
+                        <li><a href="index.html#trabajos">Trabajos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>LEGAL</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>CONTACTO</h4>
+                    <ul class="footer-contact">
+                        <li><a href="mailto:hola@puntografico.es"><i class="fas fa-envelope"></i> hola@puntografico.es</a></li>
+                        <li><a href="tel:+34910000000"><i class="fas fa-phone"></i> +34 91 000 00 00</a></li>
+                        <li><span><i class="fas fa-map-marker-alt"></i> C/ Imprenta 12 28906<br>Getafe, Madrid</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Punto Gráfico. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

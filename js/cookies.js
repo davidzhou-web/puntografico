@@ -5,24 +5,44 @@
   'use strict';
 
   var STORAGE_KEY = 'pg_cookie_consent';
+  var COOKIE_NAME = 'pg_cc';
+  var EXPIRY_DAYS = 365;
   var banner, modal;
 
   /* ─── Persistence ─── */
-  function getPrefs() {
+  function readCookie() {
     try {
-      var raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? JSON.parse(raw) : null;
+      var match = document.cookie.match(/(^|;)\s*pg_cc=([^;]+)/);
+      return match ? JSON.parse(decodeURIComponent(match[2])) : null;
     } catch (e) {
       return null;
     }
   }
 
+  function writeCookie(json) {
+    try {
+      var expires = new Date(Date.now() + EXPIRY_DAYS * 864e5).toUTCString();
+      document.cookie = COOKIE_NAME + '=' + encodeURIComponent(json) +
+        '; expires=' + expires + '; path=/; SameSite=Lax';
+    } catch (e) { /* cookies blocked */ }
+  }
+
+  function getPrefs() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch (e) { /* localStorage unavailable */ }
+    return readCookie();
+  }
+
   function savePrefs(prefs) {
     prefs.decided = true;
     prefs.date = new Date().toISOString();
+    var json = JSON.stringify(prefs);
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs));
+      localStorage.setItem(STORAGE_KEY, json);
     } catch (e) { /* storage full */ }
+    writeCookie(json);
   }
 
   function hasDecided() {
@@ -34,6 +54,7 @@
   function buildBanner() {
     var el = document.createElement('div');
     el.id = 'pg-cookie-banner';
+    el.className = 'pg-hidden';
     el.setAttribute('role', 'dialog');
     el.setAttribute('aria-label', 'Gestión de cookies');
     el.innerHTML =

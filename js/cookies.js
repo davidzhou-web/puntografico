@@ -102,6 +102,7 @@
               '<label class="pg-toggle">' +
                 '<input type="checkbox" checked disabled>' +
                 '<span class="pg-toggle-track"></span>' +
+                '<span class="sr-only">Cookies esenciales (siempre activas)</span>' +
               '</label>' +
               '<i class="fas fa-chevron-down pg-cat-chevron"></i>' +
             '</div>' +
@@ -124,6 +125,7 @@
               '<label class="pg-toggle">' +
                 '<input type="checkbox" id="toggle-analytics">' +
                 '<span class="pg-toggle-track"></span>' +
+                '<span class="sr-only">Activar cookies analíticas</span>' +
               '</label>' +
               '<i class="fas fa-chevron-down pg-cat-chevron"></i>' +
             '</div>' +
@@ -146,6 +148,7 @@
               '<label class="pg-toggle">' +
                 '<input type="checkbox" id="toggle-preferences">' +
                 '<span class="pg-toggle-track"></span>' +
+                '<span class="sr-only">Activar cookies de preferencias</span>' +
               '</label>' +
               '<i class="fas fa-chevron-down pg-cat-chevron"></i>' +
             '</div>' +

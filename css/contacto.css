@@ -185,13 +185,13 @@
 }
 
 .form-group.checkbox a {
-  color: #00a5e3;
+  color: #005f8a;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .form-group.checkbox a:hover {
-  color: #00d4ff;
+  color: #005f8a;
   text-decoration: underline;
 }
 
@@ -511,13 +511,13 @@
 
 .dept a {
   font-size: 13px;
-  color: #00a5e3;
+  color: #005f8a;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .dept a:hover {
-  color: #00d4ff;
+  color: #005f8a;
 }
 
 /* ───── FAQ Section ───── */

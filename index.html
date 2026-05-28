@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/legal.css">
 </head>
 <body>
     <!-- ───── Navbar ───── -->
     <header class="nav" id="nav">
         <div class="container nav-inner">
             <!-- <a href="#" class="logo">Punto Gráfico</a> -->
-            <a href="#" class="logo"><img class="logo-img"  src="img/punto_grafico_white.png"></a>
+            <a href="#" class="logo"><img class="logo-img"  src="img/punto_grafico_white.png" alt="Volver al inicio"></a>
             <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
@@ -271,7 +272,7 @@
                         </div>
                         <div class="form-field checkbox">
                             <input type="checkbox" id="privacidad" name="privacidad" required>
-                            <label for="privacidad">Acepto la <a href="#" target="_blank">política de privacidad</a> *</label>
+                            <label for="privacidad">Acepto la <a href="politica-privacidad.html" target="_blank">política de privacidad</a> *</label>
                             <span class="error-message" id="error-privacidad" role="alert"></span>
                         </div>
                         <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Enviar</button>
@@ -378,9 +379,9 @@
                 <div>
                     <h4>LEGAL</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Aviso legal</a></li>
-                        <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="aviso-legal.html">Aviso legal</a></li>
+                        <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+                        <li><a href="cookies.html">Política de cookies</a></li>
                     </ul>
                 </div>
                 <div>
@@ -395,9 +396,9 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Punto Gráfico. Todos los derechos reservados.</p>
                 <div class="footer-legal">
-                    <a href="#">Aviso legal</a>
-                    <a href="#">Privacidad</a>
-                    <a href="#">Cookies</a>
+                    <a href="aviso-legal.html">Aviso legal</a>
+                    <a href="politica-privacidad.html">Privacidad</a>
+                    <a href="cookies.html">Cookies</a>
                 </div>
             </div>
         </div>
@@ -408,5 +409,6 @@
     </a>
 
     <script src="js/main.js"></script>
+    <script src="js/cookies.js"></script>
 </body>
 </html>
